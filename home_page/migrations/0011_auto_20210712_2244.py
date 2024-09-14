@@ -2,7 +2,7 @@
 
 import datetime
 from django.db import migrations, models
-from django.utils.timezone import utc
+from datetime import UTC
 
 
 class Migration(migrations.Migration):
@@ -20,7 +20,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='my_blog',
             name='created_on',
-            field=models.DateTimeField(auto_now_add=True, default=datetime.datetime(2021, 7, 12, 20, 44, 0, 349940, tzinfo=utc)),
+            field=models.DateTimeField(auto_now_add=True, default=datetime.datetime(2021, 7, 12, 20, 44, 0, 349940, tzinfo=UTC)),
             preserve_default=False,
         ),
         migrations.AddField(
@@ -31,13 +31,13 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='my_portfolio',
             name='created_on',
-            field=models.DateTimeField(auto_now_add=True, default=datetime.datetime(2021, 7, 12, 20, 44, 7, 70330, tzinfo=utc)),
+            field=models.DateTimeField(auto_now_add=True, default=datetime.datetime(2021, 7, 12, 20, 44, 7, 70330, tzinfo=UTC)),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='my_researche',
             name='created_on',
-            field=models.DateTimeField(auto_now_add=True, default=datetime.datetime(2021, 7, 12, 20, 44, 14, 662393, tzinfo=utc)),
+            field=models.DateTimeField(auto_now_add=True, default=datetime.datetime(2021, 7, 12, 20, 44, 14, 662393, tzinfo=UTC)),
             preserve_default=False,
         ),
     ]
